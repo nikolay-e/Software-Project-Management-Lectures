@@ -4,7 +4,8 @@
 
 ### Foundations of Project Management
 
-Why do only 2% of grand projects succeed? Analyzing Success and Failure Factors:
+Why do only 2% of great projects succeed? Analyzing Success and Failure Factors:
+
 - **Success Factors**
   - User Involvement: It is crucial to have continuous engagement with users to understand their needs and expectations.
   - Executive Management Support: Upper management's involvement is pivotal to allocate necessary resources and aid decision-making processes.
@@ -15,21 +16,28 @@ Why do only 2% of grand projects succeed? Analyzing Success and Failure Factors:
   - Incomplete Requirements: Ambiguous or incomplete requirements often lead to incorrect solutions and unnecessary revisions.
 
 A Project is:
+
 - Temporary: having a defined start and end date.
 - Unique: resulting in a distinctive product or service.
 - Constrained: operates under limited resources, such as budget, time, or staff.
 - Planned, executed, and controlled.
 - Each project has its unique organization.
-- Most importantly, it's performed by people.
+- Performed by people.
 
 Kinds of projects (note that these categories often overlap):
-- Order project: Development is done by an external client; conflicts, if any, are usually resolved in court.
-- Internal development project: The client and developers belong to the same organization; conflicts are resolved by a top-level manager.
-- Product development project: The client is often the internal marketing division. The product is offered and sold by the company, and the funds are drawn from a global development budget.
 
-**Project management is: The application of knowledge, skills, tools, and techniques to project activities to meet project requirements.**
+- Order project: Development is done by an external client; conflicts are usually resolved in court.
+- Internal development project: The client and developers belong to the same organization; conflicts are resolved by a top-level manager.
+- Product development project: The client is often the internal marketing division. The product is offered and sold by the company, and the funds are drawn from a **global development budget**.
+
+Project management is: The application of knowledge, skills, tools, and techniques to project activities to meet project requirements.
+
+- Project management applies process management.
+- Project management creates product management.
+- Process management influences product management.
 
 **Tasks of Project Management:**
+
 - **Project Planning: Outlining project goals, defining tasks, allocating resources, and creating timelines.**
 - **Project Monitoring and Controlling: Ensuring the project stays on course and adjusting as necessary.**
 - **Stakeholder Management: Maintaining strong relationships with all stakeholders and managing their expectations.**
@@ -37,7 +45,16 @@ Kinds of projects (note that these categories often overlap):
 - **Project Organization: Structuring project teams and defining roles and responsibilities.**
 - **Team Management: Leading and guiding the team to meet project goals.**
 
+Knowledge Areas of project management:
+
+- Risk Management
+- Cost Management
+- Communications Management
+- Time Management
+- Human Resource Management
+
 Skills of a Project Manager:
+
 - Project Management Abilities: Planning, estimating, negotiating, and time management.
 - Leadership Abilities: Communication, delegation, motivation, and moderation.
 - Personal Abilities: Responsibility, patience, and fairness.
@@ -52,13 +69,14 @@ Skills of a Project Manager:
 **Software Development Process: A methodology for transforming user needs into a functional software product.**
 
 **It typically consists of the following stages:**
+
     1. **Identifying and understanding user needs.**
     2. **Translating these needs into software requirements.**
     3. **Transforming the software requirements into a detailed design.**
     4. **Implementing this design into code.**
     5. **Testing the code to ensure that it meets the requirements.**
 
-- **Software Process Model: An abstract representation of a software process that serves as a template for conducting software development activities. Key components of a software process model include phases, activities, artifacts, and roles.**
+**Software Process Model: An abstract representation of a software process that serves as a template for conducting software development activities. Key components of a software process model include phases, activities, artifacts, and roles.**
 
 #### Fundamental Development Approaches
 
@@ -73,12 +91,14 @@ Drawbacks include potential deviations from intended functionality, high costs a
 The waterfall model describes a linear approach to software development where activities are performed in sequence with little to no iteration. If errors are detected, the process returns to the corresponding activity to rectify the issue.
 
 Assumptions of the waterfall model include:
+
 - Requirements are fully defined before design begins.
 - Requirements are stable and unlikely to change significantly.
 - Users have a clear understanding of what they want and don't need iterative visualization of the system.
 - The system's complexity is manageable.
 
 Potential pitfalls:
+
 - Users may struggle to define all requirements upfront.
 - A functional version of the system is not available until late in the project, making late detection of significant issues potentially catastrophic.
 
@@ -491,9 +511,7 @@ The basic equation for effort calculation involves these three parameters:
 - Quality: This refers to an adjustment factor that accounts for the software's quality attributes.
 - Productivity: This is derived from an organization's own historical productivity data.
 
-Effort can be calculated as:
-
-`Effort = (Quantity * Quality) / Productivity`
+Effort can be calculated as: `Effort = (Quantity * Quality) / Productivity`
 
 #### Function Point Method
 
@@ -516,12 +534,8 @@ These steps help to categorize the software into five function point elements:
 Each of these elements is then assigned a weight based on its complexity. The total of these weights gives us Unadjusted Function Points (uFP).
 
 The final step is to adjust these function points by taking into account the quality attributes of the software, leading to Adjusted Function Points (aFP), calculated as:
-
-`aFP = VAF * uFP`
-
-where:
-
-`VAF = 0.65 + 0.01 * ∑i GSCi`
+- \(aFP = VAF \times uFP\), where:
+  - \(VAF = 0.65 + 0.01 \times \sum_i GSC_i\)
 
 Here, VAF stands for Value Adjustment Factor, and GSCi represents general system characteristics.
 
@@ -537,15 +551,18 @@ The Constructive Cost Model II (COCOMO II) provides a method to predict the cost
 - Estimating the program size with COCOMO II is done by considering multiple factors:
   - The size of the code that is reused: Reuse can drastically reduce the overall effort required to develop a software product.
   - The stability of requirements: Unstable or changing requirements often lead to increases in project effort.
-  - Calculation for the size (`𝑆𝑖𝑧𝑒`) is given by the formula `(1 + 𝑅𝐸𝑉𝐿 / 100 ) ∗ (𝐿𝑂𝐶𝑛𝑒𝑤 + 𝐿𝑂𝐶𝑒𝑞𝑢𝑖𝑣𝑎𝑙𝑒𝑛𝑡)`, where `𝑅𝐸𝑉𝐿` stands for the percentage of reusable code, and `𝐿𝑂𝐶𝑛𝑒𝑤` and `𝐿𝑂𝐶𝑒𝑞𝑢𝑖𝑣𝑎𝑙𝑒𝑛𝑡` are the lines of new and equivalent code respectively.
+  - Calculation for the size (`Size`) is given by the formula \(Size = (1 + \frac{REVL}{100}) \times (LOC_{new} + LOC_{equivalent})\), where:
+    - `REVL`: Stands for the percentage of reusable code.
+    - `LOC_{new}`: Lines of new code.
+    - `LOC_{equivalent}`: Lines of equivalent code.
 
 - The effort can be estimated using the formula:
-  - `𝐸𝑓𝑓𝑜𝑟𝑡 = 𝐴 ∗ 𝑆𝑖𝑧𝑒𝑆𝐸 ∗ ∏𝑖 𝐸𝑀𝑖`, where:
-    - `Effort`: The overall effort needed to complete the project, typically measured in person-months.
-    - `Size`: The size of the program in KSLOC (Thousand Source Lines of Code).
-    - `SE`: Scaling Exponent, which can be adjusted according to the particular characteristics of the project.
-    - `EM`: Effort multipliers, which represent the cost drivers that can impact the productivity of the project.
-    - `A`: An effort coefficient that should be calibrated to the local productivity data to accurately reflect the organization's capability.
+  - \(Effort = A \times Size^{SE} \times \prod_i EM_i\), where:
+    - \(Effort\): The overall effort needed to complete the project, typically measured in person-months.
+    - \(Size\): The size of the program in KSLOC (Thousand Source Lines of Code).
+    - \(SE\): Scaling Exponent, which can be adjusted according to the particular characteristics of the project.
+    - \(EM\): Effort multipliers, which represent the cost drivers that can impact the productivity of the project.
+    - \(A\): An effort coefficient that should be calibrated to the local productivity data to accurately reflect the organization's capability.
 
 - The scale factors in COCOMO II are:
   - `Precedentedness (PREC)`: The extent to which previous experiences with related projects can be applied to the current project.
@@ -555,12 +572,13 @@ The Constructive Cost Model II (COCOMO II) provides a method to predict the cost
   - `Process Maturity (PMAT)`: The level of process maturity, which is a measure of the team's familiarity with the software development process and its ability to execute it effectively.
 
 - Project Duration and Staffing: COCOMO II also gives estimates for the project duration and staffing.
-  - `𝑇𝑛𝑜𝑚 = 𝐶 ∗ 𝐸𝑛𝑜𝑚 ^ (𝐷+0,2 ∗ (𝑆𝐸−𝐵))`, where:
-    - `Tnom`: Time to develop in calendar months.
-    - `C`: Schedule coefficient.
-    - `Enom`: The nominal effort required without considering any schedule compression or expansion.
-    - `D`: Scaling Base Exponent for Schedule.
-  - `𝐴𝑣𝑒𝑟𝑎𝑔𝑒 𝑆𝑡𝑎𝑓𝑓𝑖𝑛𝑔 = 𝐸𝑓𝑓𝑜𝑟𝑡 / 𝑇𝑛𝑜𝑚` : Average staffing, which is the total effort divided by the time to develop.
+  - \(T_{nom} = C \times E_{nom}^{(D+0.2 \times (SE-B))}\), where:
+    - \(T_{nom}\): Time to develop in calendar months.
+    - \(C\): Schedule coefficient.
+    - \(E_{nom}\): The nominal effort required without considering any schedule compression or expansion.
+    - \(D\): Scaling Base Exponent for Schedule.
+  - \(Average Staffing = Effort / T_{nom}\) : Average staffing, which is the total effort divided by the time to develop.
+
 
 ## Monitoring and Risk Management
 
@@ -597,9 +615,13 @@ The goal of measuring progress is to deliver input data for a plan/actual compar
 
 There are two major ways to determine the degree of completion:
 
-- The naïve approach, `𝐷𝑜𝐶𝐸𝑆 = 𝑎𝑐𝑡𝑢𝑎𝑙𝐸𝑓𝑓𝑜𝑟𝑡 / 𝑝𝑙𝑎𝑛𝑛𝑒𝑑𝐸𝑓𝑓𝑜𝑟𝑡`, where 𝐸𝑆 stands for Effort Spent. This approach works on the assumption that the planned effort is correct and if we have spent the effort, we are done. However, it fails when the planned effort is incorrectly estimated.
+- The naïve approach, \(DoCES = \frac{actualEffort}{plannedEffort}\), where:
+  - \(ES\): Effort Spent.
+  This approach works on the assumption that the planned effort is correct and if we have spent the effort, we are done. However, it fails when the planned effort is incorrectly estimated.
 
-- The estimate to complete approach, `𝐷𝑜𝐶𝐸𝑇𝐶 = 𝑎𝑐𝑡𝑢𝑎𝑙𝐸𝑓𝑓𝑜𝑟𝑡 / 𝑓𝑜𝑟𝑒𝑐𝑎𝑠𝑡𝐹𝑖𝑛𝑎𝑙𝐸𝑓𝑓𝑜𝑟𝑡` , where 𝐸𝑇𝐶 stands for Estimate to Complete. It defines the effort still needed to complete a work package by assessing the value of the work that is already done. If the forecasts are totally wrong, this approach may also fail.
+- The estimate to complete approach, \(DoCETC = \frac{actualEffort}{forecastFinalEffort}\), where:
+  - \(ETC\): Estimate to Complete.
+  It defines the effort still needed to complete a work package by assessing the value of the work that is already done. If the forecasts are totally wrong, this approach may also fail.
 
 #### Milestone Trend Analysis
 
@@ -616,38 +638,41 @@ The benefits of MTA include easy recognition of deviations from the plan and a s
 Earned Value Analysis (EVA) is a method that allows us to track the project's progress and forecast its likely future performance based on past trends. It provides us with valuable information to make informed decisions.
 
 Inputs
+
 - **Planned Value (PV):** This is the budget allocated for the work currently scheduled. It represents the monetary value of the work that should have been completed by a specific date.
 - **Earned Value (EV):** This represents the actual completion of the project. It's the sum of the planned cost for the work already completed.
-  - `EV = DegreeOfCompletion * BAC`
+  * `EV = DegreeOfCompletion * BAC`
 - **Actual Cost (AC):** This is the total cost incurred for the project up to a specific date. It includes all costs spent on the project, regardless of what was budgeted.
 - **Budget at Completion (BAC):** This is the estimated total cost of the project. It's calculated as `BAC = PV(enddate)`, which is the total PV at the project's scheduled completion date.
 
 Current Status
+
 - **Schedule Variance (SV):** It's the difference between the value of work performed (EV) and planned costs (PV). It helps assess if the project is ahead or behind schedule.
-  - `SV = EV - PV`
+  * `SV = EV - PV`
 - **Schedule Performance Index (SPI):** This index compares work performed (EV) to work planned (PV). It measures the project's speed in relation to how quickly it was expected to progress.
-  - `SPI = EV / PV`
-    - `SPI > 1`: Project is ahead of schedule.
-    - `SPI = 1`: Project is on schedule.
-    - `SPI < 1`: Project is behind schedule.
+  * `SPI = EV / PV`
+    * `SPI > 1`: Project is ahead of schedule.
+    * `SPI = 1`: Project is on schedule.
+    * `SPI < 1`: Project is behind schedule.
 - **Cost Variance (CV):** It's the difference between the value of work performed (EV) and actual cost (AC). It shows if the project is over or under budget.
-  - `CV = EV - AC`
+  * `CV = EV - AC`
 - **Cost Performance Index (CPI):** This index compares the worth of work performed (EV) to the actual cost (AC). It indicates the project's efficiency by calculating how much output we get for every unit of cost spent.
-  - `CPI = EV / AC`
-    - `CPI > 1`: The cost of work performed is lower than planned, hence under budget.
-    - `CPI = 1`: Project is on budget.
-    - `CPI < 1`: The cost of work performed is higher than planned, hence over budget.
+  * `CPI = EV / AC`
+    * `CPI > 1`: The cost of work performed is lower than planned, hence under budget.
+    * `CPI = 1`: Project is on budget.
+    * `CPI < 1`: The cost of work performed is higher than planned, hence over budget.
 
 Forecasting
+
 - **Estimate at Completion (EAC):** This is the forecasted budget adjusted according to the project's current performance. It's the sum of the actual cost to date and an objective estimate of costs for remaining work.
-  - `EAC = BAC / CPI`
+  * `EAC = BAC / CPI`
 - **Variance at Completion (VAC):** It's the projected difference between the initial budget (BAC) and the forecasted total cost (EAC) at the project's end.
-  - `VAC = BAC - EAC`
-    - `VAC > 0`: The project is expected to finish under budget.
-    - `VAC = 0`: The project is expected to finish on budget.
-    - `VAC < 0`: The project is expected to finish over budget.
+  * `VAC = BAC - EAC`
+    * `VAC > 0`: The project is expected to finish under budget.
+    * `VAC = 0`: The project is expected to finish on budget.
+    * `VAC < 0`: The project is expected to finish over budget.
 - **To-Complete Performance Index (TCPI):** This index measures the efficiency that must be achieved to complete the remaining work with the remaining budget.
-  - `TCPI = (BAC - EV) / (BAC - AC)`
+  * `TCPI = (BAC - EV) / (BAC - AC)`
 
 ### Risk Management
 
@@ -702,6 +727,7 @@ This framework of risk management not only minimizes the potential negative impa
 For a project to deliver its optimum value, all stakeholders must be effectively engaged.
 
 Stakeholder Management consists of processes required to:
+
 - Identify the people, groups, or organizations that could impact or be impacted by the project
 - Analyse stakeholder expectations and their potential impact on the project
 - Develop appropriate management strategies for effectively engaging stakeholders in project decisions and execution
@@ -739,6 +765,7 @@ The final output of this process is the **Stakeholder Engagement Plan**, a strat
 **Decision Analysis and Resolution (DAR) is a systematic technique used to evaluate different choices against a predefined set of criteria. This formal evaluation process reduces subjectivity, thereby increasing the likelihood of selecting an alternative that aligns with stakeholder needs.**
 
 Benefits:
+
 - reducing the bias inherent in decision-making
 - increasing stakeholder buy-in through a more transparent process
 - and ensuring a higher chance of choosing an alternative that satisfies multiple stakeholder requirements
